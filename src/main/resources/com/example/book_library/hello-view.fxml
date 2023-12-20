@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.book_library.HelloController">
+   <bottom>
+      <AnchorPane prefHeight="147.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView fx:id="cartListView" layoutX="70.0" layoutY="-1.0" prefHeight="175.0" prefWidth="435.0" />
+            <Label fx:id="totalPriceLabel" layoutX="505.0" layoutY="5.0" text="Total price" />
+         </children>
+      </AnchorPane>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="225.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="99.0" fitWidth="92.0" layoutX="71.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/image1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="92.0" layoutX="254.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/images%206.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="92.0" layoutX="449.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/images%205.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="bookPriceLabel" layoutX="87.0" layoutY="136.0" prefHeight="17.0" prefWidth="32.0" text="10.99" />
+            <Label fx:id="bookPriceLabel2" layoutX="272.0" layoutY="136.0" prefHeight="17.0" prefWidth="32.0" text="10.99" />
+            <Label fx:id="bookPriceLabel3" layoutX="465.0" layoutY="136.0" prefHeight="17.0" prefWidth="31.0" text="10.99" />
+            <Button fx:id="addButton" layoutX="84.0" layoutY="153.0" mnemonicParsing="false" onAction="#onAddButtonClick" text="Add" />
+            <Button fx:id="removeButton" layoutX="73.0" layoutY="178.0" mnemonicParsing="false" onAction="#onRemoveButtonClick" text="Remove" />
+            <Button fx:id="addButton2" layoutX="269.0" layoutY="153.0" mnemonicParsing="false" onAction="#onAddButtonClick2" text="Add" />
+            <Button fx:id="removeButton2" layoutX="258.0" layoutY="178.0" mnemonicParsing="false" onAction="#onRemoveButtonClick2" text="Remove" />
+            <Button fx:id="addButton3" layoutX="462.0" layoutY="153.0" mnemonicParsing="false" onAction="#onAddButtonClick3" text="Add" />
+            <Button fx:id="removeButton3" layoutX="451.0" layoutY="178.0" mnemonicParsing="false" onAction="#onRemoveButtonClick3" text="Remove" />
+            <Label fx:id="bookNameLabel" layoutX="56.0" layoutY="122.0" text="Vfktymrbq ghbyw" />
+            <Label fx:id="bookNameLabel2" layoutX="241.0" layoutY="122.0" text="Vfktymrbq ghbyw" />
+            <Label fx:id="bookNameLabel3" layoutX="431.0" layoutY="122.0" text="aVfktymrbq ghbyw" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
